@@ -1,0 +1,230 @@
+{
+	"textures": [
+		{
+			"image": "bronze_coin.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1441,
+				"h": 1699
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "Bronze_1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 563,
+						"h": 564
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 563,
+						"h": 564
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 563,
+						"h": 564
+					}
+				},
+				{
+					"filename": "Bronze_10.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 559,
+						"h": 564
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 559,
+						"h": 564
+					},
+					"frame": {
+						"x": 1,
+						"y": 567,
+						"w": 559,
+						"h": 564
+					}
+				},
+				{
+					"filename": "Bronze_2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 559,
+						"h": 564
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 559,
+						"h": 564
+					},
+					"frame": {
+						"x": 1,
+						"y": 1133,
+						"w": 559,
+						"h": 564
+					}
+				},
+				{
+					"filename": "Bronze_3.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 504,
+						"h": 564
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 504,
+						"h": 564
+					},
+					"frame": {
+						"x": 562,
+						"y": 567,
+						"w": 504,
+						"h": 564
+					}
+				},
+				{
+					"filename": "Bronze_9.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 503,
+						"h": 564
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 503,
+						"h": 564
+					},
+					"frame": {
+						"x": 566,
+						"y": 1,
+						"w": 503,
+						"h": 564
+					}
+				},
+				{
+					"filename": "Bronze_4.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 428,
+						"h": 565
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 428,
+						"h": 565
+					},
+					"frame": {
+						"x": 562,
+						"y": 1133,
+						"w": 428,
+						"h": 565
+					}
+				},
+				{
+					"filename": "Bronze_8.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 428,
+						"h": 565
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 428,
+						"h": 565
+					},
+					"frame": {
+						"x": 992,
+						"y": 1133,
+						"w": 428,
+						"h": 565
+					}
+				},
+				{
+					"filename": "Bronze_5.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 262,
+						"h": 564
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 262,
+						"h": 564
+					},
+					"frame": {
+						"x": 1068,
+						"y": 567,
+						"w": 262,
+						"h": 564
+					}
+				},
+				{
+					"filename": "Bronze_7.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 262,
+						"h": 564
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 262,
+						"h": 564
+					},
+					"frame": {
+						"x": 1071,
+						"y": 1,
+						"w": 262,
+						"h": 564
+					}
+				},
+				{
+					"filename": "Bronze_6.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 108,
+						"h": 564
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 108,
+						"h": 564
+					},
+					"frame": {
+						"x": 1332,
+						"y": 567,
+						"w": 108,
+						"h": 564
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:d5d0243167ba144d51881b101aea6a4e:8e20aa9fdbcf126faf44b3ddf3a04112:8acefe41b27a081a1ed87e97795e7322$"
+	}
+}
