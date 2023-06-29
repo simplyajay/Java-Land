@@ -1,0 +1,230 @@
+{
+	"textures": [
+		{
+			"image": "heart.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1425,
+				"h": 1698
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "heart_1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 559,
+						"h": 564
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 559,
+						"h": 564
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 559,
+						"h": 564
+					}
+				},
+				{
+					"filename": "heart_10.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 559,
+						"h": 564
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 559,
+						"h": 564
+					},
+					"frame": {
+						"x": 562,
+						"y": 1,
+						"w": 559,
+						"h": 564
+					}
+				},
+				{
+					"filename": "heart_5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 559,
+						"h": 564
+					},
+					"spriteSourceSize": {
+						"x": 147,
+						"y": 0,
+						"w": 264,
+						"h": 564
+					},
+					"frame": {
+						"x": 1123,
+						"y": 1,
+						"w": 264,
+						"h": 564
+					}
+				},
+				{
+					"filename": "heart_2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 559,
+						"h": 564
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 559,
+						"h": 564
+					},
+					"frame": {
+						"x": 1,
+						"y": 567,
+						"w": 559,
+						"h": 564
+					}
+				},
+				{
+					"filename": "heart_3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 559,
+						"h": 564
+					},
+					"spriteSourceSize": {
+						"x": 26,
+						"y": 0,
+						"w": 506,
+						"h": 564
+					},
+					"frame": {
+						"x": 1,
+						"y": 1133,
+						"w": 506,
+						"h": 564
+					}
+				},
+				{
+					"filename": "heart_9.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 559,
+						"h": 564
+					},
+					"spriteSourceSize": {
+						"x": 27,
+						"y": 0,
+						"w": 505,
+						"h": 564
+					},
+					"frame": {
+						"x": 509,
+						"y": 1133,
+						"w": 505,
+						"h": 564
+					}
+				},
+				{
+					"filename": "heart_4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 559,
+						"h": 564
+					},
+					"spriteSourceSize": {
+						"x": 64,
+						"y": 0,
+						"w": 430,
+						"h": 564
+					},
+					"frame": {
+						"x": 562,
+						"y": 567,
+						"w": 430,
+						"h": 564
+					}
+				},
+				{
+					"filename": "heart_8.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 559,
+						"h": 564
+					},
+					"spriteSourceSize": {
+						"x": 64,
+						"y": 0,
+						"w": 430,
+						"h": 564
+					},
+					"frame": {
+						"x": 994,
+						"y": 567,
+						"w": 430,
+						"h": 564
+					}
+				},
+				{
+					"filename": "heart_7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 559,
+						"h": 564
+					},
+					"spriteSourceSize": {
+						"x": 147,
+						"y": 0,
+						"w": 264,
+						"h": 564
+					},
+					"frame": {
+						"x": 1016,
+						"y": 1133,
+						"w": 264,
+						"h": 564
+					}
+				},
+				{
+					"filename": "heart_6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 559,
+						"h": 564
+					},
+					"spriteSourceSize": {
+						"x": 224,
+						"y": 0,
+						"w": 110,
+						"h": 564
+					},
+					"frame": {
+						"x": 1282,
+						"y": 1133,
+						"w": 110,
+						"h": 564
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:8d420c9e0908d7861bb2d206cedd0c00:9ef54235cf6baf44aba899568649c4d9:cb39580ce6d86b4835ef90f0a2df983e$"
+	}
+}

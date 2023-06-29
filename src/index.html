@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Java Platformer</title>
+	<link rel="stylesheet" href="./css/game.css">
+	<link rel="stylesheet" href="./css/bootstrap.css">
+
+</head>
+
+<body oncontextmenu="false;" id="body">
+
+	<script type="module" src="config.js"></script>
+
+	<div id="game-parent"></div>
+
+	<!--CONTENT DIALOG START-->
+	<div class="input-box unselectable" id="input-box">
+
+		<div style="height: 5vh; padding: 0">
+
+			<div class="q-difficulty-div">
+
+				<div class="q-difficulty-p1">
+
+					<p>Task Difficulty : </p>
+
+				</div>
+
+				<div class="q-difficulty-p2" id="difficulty">
+
+
+				</div>
+
+			</div>
+
+			<!-- Close Button -->
+			<div class="right">
+
+				<button type="button" id="close-button" class="btn btn-close"></button>
+
+			</div>
+			<!-- Close Button -->
+
+		</div>
+
+		<div>
+
+			<!-- Tabs -->
+			<div class="reading-material-div">
+
+				<a href="#" class="center title-after" id="reading-material-button">READING MATERIAL</a>
+
+			</div>
+
+			<div class="quiz-div">
+
+				<a href="#" class="center title-before" id="quiz-button">QUIZ</a>
+
+			</div>
+			<!-- Tabs -->
+
+		</div>
+
+		<div class="reading-material" id="reading-material">
+
+			<!-- Reading Content -->
+			<div class="form-group content reading-material-content" id="reading-material-content">
+
+
+			</div>
+			<!-- Reading Content -->
+
+		</div>
+
+		<div class="quiz" id="quiz">
+
+			<!-- Question Content -->
+			<div class="content questions" id="questions-content">
+
+
+			</div>
+			<!-- Question Content -->
+
+			<!-- Question Answer -->
+			<div class="multiple-choice-container" id="multiple-choice-block">
+
+				<div class="multiple-choice-button">
+
+					<button type="button" id="option1" class="btn btn-primary">A.</button>
+
+				</div>
+
+				<div class="multiple-choice-button">
+
+					<button type="button" id="option2" class="btn btn-primary">B.</button>
+
+				</div>
+
+				<div class="multiple-choice-button">
+
+					<button type="button" id="option3" class="btn btn-primary">C.</button>
+
+				</div>
+
+
+			</div>
+
+			<div class="true-false-container" id="true-false-block">
+
+				<div class="true-false-button">
+
+					<button type="button" id="optionTrue" class="btn btn-primary">True</button>
+
+				</div>
+
+				<div class="true-false-button">
+
+					<button type="button" id="optionFalse" class="btn btn-primary">False</button>
+
+				</div>
+
+			</div>
+			<!-- Question Answer -->
+
+		</div>
+
+
+	</div>
+	<!-- CONTENT DIALOG END-->
+
+
+	<!-- CONFIRMATION DIALOG START -->
+	<div class="message-box unselectable" id="confirm-box">
+
+		<div class="message-box-message-container">
+
+			<p class="justify">Are you sure?</p>
+
+		</div>
+
+		<div class="message-box-button-container">
+
+			<div class="message-box-button">
+
+				<button type="button" id="optionYes" class="btn btn-primary">Yes</button>
+
+			</div>
+
+			<div class="message-box-button">
+
+				<button type="button" id="optionNo" class="btn btn-primary">No</button>
+
+			</div>
+
+
+		</div>
+
+	</div>
+	<!-- CONFIRMATION DIALOG END -->
+
+	<!-- QUIZ CONFIRMATION DIALOG START -->
+	<div class="quiz-confirm-box unselectable" id="quiz-confirm-box">
+
+		<div class="quiz-confirm-box-message-container">
+
+			<p class="justify-2">Are you sure you want to take the quiz?</p>
+			<p class="justify-2">If you proceed, you can no longer view this reading material</p>
+
+		</div>
+
+		<div class="quiz-confirm-box-button-container">
+
+			<div class="message-box-button">
+
+				<hr>
+
+				<button type="button" id="quiz-confirm-optionProceed" class="btn btn-danger">Proceed</button>
+
+			</div>
+
+
+
+			<div class="message-box-button">
+
+				<hr>
+
+				<button type="button" id="quiz-confirm-optionCancel" class="btn btn-primary">Cancel</button>
+
+			</div>
+
+
+		</div>
+
+	</div>
+	<!-- QUIZ CONFIRMATION DIALOG END -->
+
+	<!-- MESSAGE DIALOG START-->
+	<div class="message-box unselectable" id="message-box">
+
+		<div class="message-box-message-container" id="message-box-content">
+
+
+		</div>
+
+		<div class="message-box-button-container">
+
+			<div class="message-box-button2">
+
+				<button type="button" id="optionOk" class="btn btn-primary">Ok</button>
+
+			</div>
+
+		</div>
+
+	</div>
+	<!-- MESSAGE DIALOG END-->
+
+	<!-- FINNISH MESSAGE DIALOG START-->
+	<div class="message-box unselectable" id="finish-message-box">
+
+		<div class="message-box-message-container" id="message-box-content">
+
+			<P class="justify-2">Congratulations! <br> You have found and answered all signs</P>
+
+		</div>
+
+		<div class="message-box-button-container">
+
+			<div class="message-box-button2">
+
+				<button type="button" id="finish-optionOk" class="btn btn-primary">Ok</button>
+
+			</div>
+
+		</div>
+
+	</div>
+	<!-- FINNISH MESSAGE DIALOG END-->
+
+	<!-- SCORE DIALOG START-->
+	<div class="score-box unselectable" id="score-box">
+
+		<div class="score-image-box" id="score-image-box">
+
+			<img style="display: none;" src="scoreAssets/bronze.png" alt="score image" id="bronze-score">
+
+			<img style="display: none;" src="scoreAssets/silver.png" alt="score image" id="silver-score">
+
+			<img style="display: none;" src="scoreAssets/gold.png" alt="score image" id="gold-score">
+
+		</div>
+
+		<div class="score-text-box" id="score-text">
+
+			<p id="final-score-label">SCORE</p>
+			<p id="final-score">0</p>
+
+		</div>
+
+		<div class="collected-items-box" id="collected-items">
+
+			<div class="collected-items-container">
+
+				<div class="collected-items-inner-container">
+
+					<div class="collected-items-inner" id="collected-bronze-box">
+
+						<hr>
+						<img src="scoreAssets/bronze_1.png" alt="score image">
+						<p id="collected-bronze-count">0/0</p>
+						<hr>
+
+					</div>
+
+					<div class="collected-items-inner" id="collected-silver-box">
+
+						<hr>
+						<img src="scoreAssets/silver_1.png" alt="score image">
+						<p id="collected-silver-count">0/0</p>
+						<hr>
+
+					</div>
+
+					<div class="collected-items-inner" id="collected-gold-box">
+
+						<hr>
+						<img src="scoreAssets/gold_1.png" alt="score image">
+						<p id="collected-gold-count">0/0</p>
+						<hr>
+
+					</div>
+
+					<div class="collected-items-inner" id="collected-sign-box">
+
+						<hr>
+						<img src="scoreAssets/sign.png" alt="score image">
+						<p id="collected-task-count">0/0</p>
+						<hr>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="score-navigation-box" id="navigation">
+
+			<div class="score-navigation-container">
+
+				<div class="score-navigation-container-inner">
+
+					<div class="score-navigation-button-div">
+
+						<button class="btn btn-secondary" id="main-menu-button">Main Menu</button>
+
+					</div>
+
+					<div class="score-navigation-button-div">
+
+						<button class="btn btn-success" id="play-again-button">Play Again</button>
+
+					</div>
+
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+	<!-- SCORE DIALOG END-->
+
+	<!-- HOW TO PLAY START-->
+
+	<div class="how-to-play-box unselectable" id="how-to-play-box">
+
+		<div class="right">
+
+			<button type="button" id="how-to-play-close-button" class="btn btn-close"></button>
+
+		</div>
+
+		<div id="carouselExampleIndicators" class="carousel slide carousel-container" data-bs-ride="carousel"
+			data-ride="carousel">
+
+			<div class="carousel-indicators">
+
+				<button id="slide-1" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+					class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button id="slide-2" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+					aria-label="Slide 2"></button>
+				<button id="slide-3" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+					aria-label="Slide 3"></button>
+
+			</div>
+
+			<div class="carousel-inner">
+
+				<div class="carousel-item active" id="item-1">
+
+					<div class="container item-1">
+
+						<div>
+
+							<h1>Controls</h1>
+
+							<img src="howToPlayAssets/keyboard_how.png" alt="test">
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div id="item-2" class="carousel-item">
+
+					<div class="container item-2">
+
+						<div class="item-2-inner">
+
+							<div class="item-2-title">
+
+								<h1>Objectives</h1>
+
+							</div>
+
+							<div class="item-2-context">
+
+								<img id="image-2" src="howToPlayAssets/task_how.png" alt="test">
+								<p style="color: gray;">(click image to expand)</p>
+
+							</div>
+
+							<div class="item-2-context">
+
+								<p>To finish the game, you must find all the signs, read the reading materials and answer the quizes.</p>
+								<p>You must avoid the thorns(obstacles) since it kills you.</p>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div id="item-3" class="carousel-item">
+
+					<div class="container item-3">
+
+						<div class="item-3-inner">
+
+							<div class="item-3-title">
+
+								<h1>Collectibles and Score</h1>
+
+							</div>
+
+							<div class="item-3-context-left">
+
+								<img id="image-2" src="howToPlayAssets/collectibles.png" alt="test">
+
+							</div>
+
+							<div class="item-3-context-right">
+
+								<p>There are 4 kinds of objects that you can collect.</p>
+								<p>Collecting objects and answering quizes increases your score.</p>
+								<p>Score may vary depending on the coins you have collected and the difficulty of the quizes you have answered.</p>
+								<p>Collecting heart increases your health. </p>
+
+							</div>
+
+
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+			<button id="prev-button" class="carousel-control-prev" type="button"
+				data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+
+			<button id="next-button" class="carousel-control-next" type="button"
+				data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+
+	</div>
+
+	<!-- HOW TO PLAY END-->
+
+</body>
+
+</html>
